@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+*{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: 	#191716;
+}
+
+/* ------ NavBar---------  */
+#title , .Links{
+  padding: 1rem;
+  text-align: center;
+  color: #ffffff;
+  
+}
+
+.Links .upper ,.Links .lower{
+  display: contents;
+}
+
+.Links a{
+  margin: 0rem 2rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #c0c5ce;
+}
+
+.Links a:hover{
+  color: #ffffff;
+}
+/* ------ Home---------  */
+#walidImage{
+  border: 1px solid black;
+  max-width: 22rem;
+  max-height: 25rem;
+  margin-top: 1rem;
+
+}
+
+.home{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  color: #ffffff;
+}
+
+.redText{
+  display: contents;
+  color: #CC2936;
+}
+#desc{
+  max-width: 16rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button{
+  margin-top: 0.5rem;
+  background-color: none;
+  padding: 0.8rem 0.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid white;
+  color :white;
+  margin: 0.5rem 0.6rem;
+}
+button:hover{
+  background-color: #CC2936;
+  cursor: pointer;
+}
+/* ------ About---------  */
+.About{
+  display: flex;
+  margin-top: 5rem;
+}
+
+.aboutMe ,.image{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow:visible;
+  flex:6;
+
+}
+
+.aboutMe p , .aboutMe h2{
+  color: white;
+  text-align: left;
+  padding: 1rem 2rem;
+  
+}
+.image{
+  max-width: fit-content;
+  max-height:21rem;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  flex:6;
+}
+/* ------ Projects--------- */
+.projectsList{
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.projectDesc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.projectDesc p{
+  margin: 0.3rem 0;
+  
+}
+.project{
+  display: flex;
+  color: white;
+  border: 1px solid white;
+  margin: 2rem;
+  border-radius: 0.6rem;
+  width: 60rem;
+  padding: 0.5rem;
+}
+.projectsList h2{
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  margin-top: 0;
+
+}
+.projectImage{
+  width: 13rem;
+  height: 10rem;
+  flex-grow: 0;
+}
+
+
+
+
+/* ------ Contact---------  */
+.contact h2{
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+
+}
+.container{
+  display: flex;
+  color: white;
+  margin-top: 2rem;
+}
+.container .right{
+  border-left: 1px #ffffff solid;
+}
+.container .left,.container .right{
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  padding-top: 0;
+}
+.container .right button{
+  margin-left: 0;
+}
+input {
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  height: 2rem;
+  width: 35rem;
+  color: white;
+}
+textarea{
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  width: 35rem;
+  color: white;
+}
+label{
+  margin: 0.7rem 0;
+}
+
+input:active,textarea:active{
+  border: 1px solid white;
+  box-shadow: #ffffff;
+  
+}
+.left{
+  align-items: center;
+
+}
+.right button{
+  width: 7rem;
+  margin-top: 1rem;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  border:1px solid white;
+  width: 20rem;
+  padding: 1rem 1rem;
+  border-radius: 0.3rem;
+  margin: 0.7rem 1rem;
+}
+.info a{
+  text-decoration: none;
+  color: #E6AF2E;
+}
+.info:first-of-type{
+  margin-top: 2.22rem;
+}
+
+#phoneIcon , #inIcon,#locationIcon{
+  width: 2rem;
+  height: 2rem;
+}
+#mailIcon{
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.icon{
+  margin-right: 1rem;
+}
+
+
+
+
+/*NavBar*/
+@media screen and (max-width:560px){
+  .Links .upper ,.Links .lower{
+    display: block;
+  }
+}
+
+
+/*About*/
+@media screen and (max-width:1150px) and (max-height:950px){
+  .image{
+    display: none;
+  }
+   .aboutMe h2{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:1150px) and (min-height:950px){
+   .aboutMe h2{
+    text-align: center;
+  }
+  .About{
+    flex-direction: column;
+  }
+  .image{
+    margin-top: 2rem;
+  }
+
+}
+/*projects*/
+@media screen and (max-width:980px){
+  .project{
+    max-width:40rem;
+  }
+  .projectImage{
+    display: none;
+  }
+  
+  
+}
+@media screen and (max-width:690px){
+  .project{
+    max-width:20rem;
+  }
+  .projectImage{
+    display: none;
+  }
+  
+  
+}
+
+/*CONTACT*/
+@media screen and (max-width:1080px){
+  .container{
+    flex-direction: column;
+  }
+  .container .right{
+    border-left: none;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .container .left{
+    border-left: none;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width:580px){
+  
+  input,textarea{
+    width: 22rem;
+  }
+  
+}
